@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Rodrigo Angelim da Cunha — projetos acadêmicos e pessoais.">
+  <title>Rodrigo Angelim da Cunha | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <nav class="nav">
+      <a class="marca" href="#inicio">Rodrigo Angelim da Cunha</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#documentos">Documentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <p class="saudacao">Olá, eu sou</p>
+      <h1>Rodrigo Angelim da Cunha</h1>
+      <p class="subtitulo">Estudante de Ciência da Computação | Crio soluções web simples e funcionais</p>
+      <div class="hero-botoes">
+        <a class="btn btn-primario" href="#projetos">Ver projetos</a>
+        <a class="btn btn-secundario" href="docs/curriculo.pdf" target="_blank">Baixar currículo</a>
+      </div>
+    </section>
+
+    <section class="secao" id="sobre">
+      <h2>Sobre mim</h2>
+      <div class="sobre-conteudo">
+        <p>
+          Sou estudante de <strong>Ciência da Computação</strong> no CEUB e este é o meu
+          repositório de portfólio, criado como entrega do Bootcamp.
+          Aqui reúno projetos acadêmicos, projetos pessoais e documentos,
+          tudo versionado com <strong>Git</strong> e publicado no <strong>GitHub</strong>.
+        </p>
+        <ul class="habilidades">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git e GitHub</li>
+          <li>Office / Docs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao secao-clara" id="projetos">
+      <h2>Projetos</h2>
+      <p class="secao-desc">Cada projeto possui sua própria pasta e README no repositório.</p>
+      <div class="grade">
+
+        <article class="card">
+          <h3>Site Vitrine (Portfólio)</h3>
+          <p>Página pessoal responsiva publicada com GitHub Pages. Versão 1.0.</p>
+          <p class="tech">HTML · CSS · GitHub Pages</p>
+          <div class="card-links">
+            <a href="#inicio">Ver online</a>
+            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/site-vitrine" target="_blank">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Calculadora IMC</h3>
+          <p>Aplicação web que calcula o Índice de Massa Corporal com validação de dados.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <div class="card-links">
+            <a href="projetos/calculadora-imc/index.html" target="_blank">Ver online</a>
+            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/calculadora-imc" target="_blank">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Lista de Tarefas</h3>
+          <p>Gerenciador de tarefas com adição, conclusão e exclusão de itens.</p>
+          <p class="tech">HTML · CSS · JavaScript</p>
+          <div class="card-links">
+            <a href="projetos/lista-de-tarefas/index.html" target="_blank">Ver online</a>
+            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/lista-de-tarefas" target="_blank">Código</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="secao" id="documentos">
+      <h2>Documentos e slides</h2>
+      <p class="secao-desc">Materiais das disciplinas e apresentações do Bootcamp.</p>
+      <div class="grade">
+
+        <article class="card card-doc">
+          <h3>📄 Trabalho de Conclusão</h3>
+          <p>PDF do trabalho final da disciplina.</p>
+          <a href="docs/trabalho-final.pdf" target="_blank">Abrir documento</a>
+        </article>
+
+        <article class="card card-doc">
+          <h3>📊 Slides — Aula</h3>
+          <p>Apresentação em slides usada em sala.</p>
+          <a href="docs/slides-aula.pdf" target="_blank">Abrir slides</a>
+        </article>
+
+        <article class="card card-doc">
+          <h3>📝 Currículo</h3>
+          <p>Atualizado em outubro de 2026.</p>
+          <a href="docs/curriculo.pdf" target="_blank">Baixar PDF</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="secao secao-clara" id="contato">
+      <h2>Contato</h2>
+      <div class="contato-links">
+        <a href="https://github.com/rodrigoangel1im" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rodrigo-angelim-45a137246" target="_blank">LinkedIn</a>
+        <a href="mailto:angelimrodrigo@outlook.com">E-mail</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 Rodrigo Angelim da Cunha — Portfólio acadêmico. Feito com Git, GitHub e GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', function () {
+      document.getElementById('menu').classList.toggle('aberto');
+    });
+    document.querySelectorAll('.menu a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        document.getElementById('menu').classList.remove('aberto');
+      });
+    });
+  </script>
+
+</body>
+</html>

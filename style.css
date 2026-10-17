@@ -1,0 +1,370 @@
+/* ============================================
+   Portfólio — Rodrigo Angelim da Cunha
+   Estilo responsivo e visual profissional
+   ============================================ */
+
+:root {
+  --cor-fundo: #0f172a;
+  --cor-fundo-claro: #1e293b;
+  --cor-card: #1e293b;
+  --cor-card-borda: #334155;
+  --cor-primaria: #38bdf8;
+  --cor-secundaria: #818cf8;
+  --cor-texto: #e2e8f0;
+  --cor-texto-suave: #94a3b8;
+  --cor-clara: #f1f5f9;
+  --largura: 1100px;
+  --raio: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ---------- Navegação ---------- */
+
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid var(--cor-card-borda);
+  backdrop-filter: blur(6px);
+}
+
+.nav {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marca {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu a {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: var(--cor-primaria);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--cor-card-borda);
+  color: var(--cor-texto);
+  font-size: 1.3rem;
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 6rem 1.25rem 5rem;
+  text-align: center;
+}
+
+.saudacao {
+  color: var(--cor-primaria);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.subtitulo {
+  color: var(--cor-texto-suave);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hero-botoes {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-primario {
+  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+  color: #0f172a;
+}
+
+.btn-secundario {
+  border: 1px solid var(--cor-card-borda);
+  color: var(--cor-texto);
+}
+
+/* ---------- Seções ---------- */
+
+.secao {
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding: 4rem 1.25rem;
+}
+
+.secao-clara {
+  max-width: none;
+  background-color: var(--cor-fundo-claro);
+}
+
+.secao-clara > * {
+  max-width: var(--largura);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secao h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  color: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.secao h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+}
+
+.secao-desc {
+  color: var(--cor-texto-suave);
+  margin-bottom: 2rem;
+}
+
+.sobre-conteudo p {
+  color: var(--cor-texto-suave);
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.habilidades {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.habilidades li {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-card-borda);
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: var(--cor-primaria);
+}
+
+/* ---------- Grade e cards ---------- */
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-card-borda);
+  border-radius: var(--raio);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--cor-primaria);
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.card p {
+  color: var(--cor-texto-suave);
+  font-size: 0.95rem;
+}
+
+.tech {
+  font-size: 0.85rem !important;
+  color: var(--cor-secundaria) !important;
+}
+
+.card-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.card-doc a {
+  margin-top: auto;
+  font-weight: 600;
+}
+
+/* ---------- Contato ---------- */
+
+.contato-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contato-links a {
+  background-color: var(--cor-card);
+  border: 1px solid var(--cor-card-borda);
+  padding: 0.8rem 1.75rem;
+  border-radius: var(--raio);
+  font-weight: 600;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.contato-links a:hover {
+  transform: translateY(-4px);
+  border-color: var(--cor-primaria);
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+  border-top: 1px solid var(--cor-card-borda);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--cor-texto-suave);
+  font-size: 0.9rem;
+}
+
+/* ========== Responsividade ========== */
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--cor-fundo-claro);
+    border-bottom: 1px solid var(--cor-card-borda);
+  }
+
+  .menu.aberto {
+    display: flex;
+  }
+
+  .menu li {
+    padding: 0.9rem 1.25rem;
+    border-top: 1px solid var(--cor-card-borda);
+  }
+
+  .hero {
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .secao {
+    padding: 3rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-botoes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .card-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contato-links {
+    flex-direction: column;
+  }
+
+  .contato-links a {
+    text-align: center;
+  }
+}
