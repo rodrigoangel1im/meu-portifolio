@@ -40,6 +40,7 @@ meu-portifolio/
 ├── style.css                    ← estilos da página
 ├── docs/
 │   ├── curriculo.pdf
+│   ├── slides-apresentacao.pdf
 │   └── print-*.png            ← prints dos projetos
 └── projetos/
     ├── site-vitrine/
@@ -73,6 +74,7 @@ Gerenciador de tarefas: adicionar, concluir e excluir itens.
 ## 📄 Documentos
 Materiais disponíveis na pasta [`docs/`](docs/):
 - `curriculo.pdf` — currículo atualizado
+- `slides-apresentacao.pdf` — slides sobre o repositório e os projetos
 - `print-*.png` — capturas de tela dos projetos
 
 A página do portfólio também reúne links para a documentação e para o código-fonte no GitHub.
@@ -97,6 +99,14 @@ start index.html        # Windows
 | `v1.0` | Primeira versão estável do portfólio | 17/10/2026 |
 
 Histórico com `git log --oneline --graph --all`.
+
+## 🤝 Colaboração
+Como o repositório é público, qualquer pessoa pode contribuir pelo fluxo padrão do GitHub:
+1. **Fork** do repositório
+2. Criação de uma **branch** (`git checkout -b feature/minha-melhoria`)
+3. **Commit** com mensagens no padrão Conventional Commits
+4. **Push** e abertura de um **Pull Request**
+5. Revisão e merge na `main`
 
 ## 📜 Licença
 Este projeto está sob a licença [MIT](LICENSE) — uso livre para fins acadêmicos.
