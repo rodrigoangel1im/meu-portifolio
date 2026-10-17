@@ -39,9 +39,8 @@ meu-portifolio/
 ├── index.html                   ← página do GitHub Pages
 ├── style.css                    ← estilos da página
 ├── docs/
-│   ├── trabalho-final.pdf
-│   ├── slides-aula.pdf
-│   └── curriculo.pdf
+│   ├── curriculo.pdf
+│   └── print-*.png            ← prints dos projetos
 └── projetos/
     ├── site-vitrine/
     │   └── README.md
@@ -72,10 +71,11 @@ Gerenciador de tarefas: adicionar, concluir e excluir itens.
 `[Ver projeto](projetos/lista-de-tarefas/README.md)`
 
 ## 📄 Documentos
-Materiais das disciplinas disponíveis na pasta [`docs/`](docs/):
-- `trabalho-final.pdf`
-- `slides-aula.pdf`
-- `curriculo.pdf`
+Materiais disponíveis na pasta [`docs/`](docs/):
+- `curriculo.pdf` — currículo atualizado
+- `print-*.png` — capturas de tela dos projetos
+
+A página do portfólio também reúne links para a documentação e para o código-fonte no GitHub.
 
 ## 💻 Como executar localmente
 
