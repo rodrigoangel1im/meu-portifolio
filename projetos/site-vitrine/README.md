@@ -20,7 +20,8 @@ start index.html        # Windows — abre no navegador
 Ou acesse a versão online: **https://rodrigoangel1im.github.io/meu-portifolio**
 
 ## 📸 Prints
-![Tela inicial do portfólio](../../docs/print-portfolio.png)
+
+> **TODO:** capturar a tela inicial do portfólio, salvar como `docs/print-portfolio.png` e inserir a imagem nesta seção.
 
 ## 👤 Autor
 **Rodrigo Angelim da Cunha** — Ciência da Computação (CEUB)

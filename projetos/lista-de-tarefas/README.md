@@ -19,7 +19,8 @@ start index.html        # Windows — abre no navegador
 > Não é necessário servidor: basta abrir o `index.html`.
 
 ## 📸 Prints
-![Tela da Lista de Tarefas](../../docs/print-lista-de-tarefas.png)
+
+> **TODO:** capturar a tela da lista de tarefas, salvar como `docs/print-lista-de-tarefas.png` e inserir a imagem nesta seção.
 
 ## 👤 Autor
 **Rodrigo Angelim da Cunha** — Ciência da Computação (CEUB)

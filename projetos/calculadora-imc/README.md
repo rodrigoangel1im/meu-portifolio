@@ -19,7 +19,8 @@ start index.html        # Windows — abre no navegador
 > Não é necessário servidor: basta abrir o `index.html`.
 
 ## 📸 Prints
-![Tela inicial da Calculadora de IMC](../../docs/print-calculadora.png)
+
+> **TODO:** capturar a tela inicial da calculadora, salvar como `docs/print-calculadora.png` e inserir a imagem nesta seção.
 
 ## 👤 Autor
 **Rodrigo Angelim da Cunha** — Ciência da Computação (CEUB)
