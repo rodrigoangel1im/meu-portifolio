@@ -1,0 +1,46 @@
+# Verificação de links quebrados em Markdown e HTML
+# Executa em push e Pull Request para a main, além de execução manual.
+# Documentação: https://github.com/lycheeverse/lychee-action
+
+name: Verificação de links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-links-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    name: Links em .md e .html
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Verificar links com lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          # 999 é usado pelo LinkedIn para bloquear bots; 429 é rate limit.
+          # URLs com TODO são marcadores de pendência e devem ser ignoradas.
+          args: >-
+            --no-progress
+            --verbose
+            --accept 200,206,429,999
+            --exclude 'TODO'
+            --exclude-path node_modules
+            './**/*.md'
+            './**/*.html'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
