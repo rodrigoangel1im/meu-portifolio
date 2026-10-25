@@ -1,0 +1,7 @@
+# CODEOWNERS — responsáveis pela revisão
+# Documentação: https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# O proprietário abaixo é solicitado automaticamente para revisar
+# todos os Pull Requests que alterem qualquer arquivo do repositório.
+
+* @rodrigoangel1im
