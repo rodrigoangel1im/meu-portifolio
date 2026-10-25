@@ -1,4 +1,4 @@
-# PortfolioHUB — Entrega Final
+# PortfolioHUB — Entrega Fina
 
 Repositório pessoal de **Rodrigo Angelim da Cunha** que reúne projetos acadêmicos e pessoais, documentação, governança, segurança e práticas de colaboração. É a **Entrega Final do Bootcamp I** (Ciência da Computação — CEUB), evoluindo o portfólio da Entrega Intermediária para um hub versionado e publicado no GitHub Pages.
 
