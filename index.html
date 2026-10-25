@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Rodrigo Angelim da Cunha — projetos acadêmicos e pessoais.">
-  <title>Rodrigo Angelim da Cunha | Portfólio</title>
+  <meta name="description" content="PortfolioHUB de Rodrigo Angelim da Cunha — projetos acadêmicos e pessoais, documentação, segurança e colaboração.">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Open Graph básico -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="PortfolioHUB">
+  <meta property="og:title" content="PortfolioHUB — Rodrigo Angelim da Cunha">
+  <meta property="og:description" content="Portfólio acadêmico com projetos, documentação, governança e boas práticas de segurança.">
+  <meta property="og:url" content="https://rodrigoangel1im.github.io/meu-portifolio/">
+
+  <!-- Favicon: emoji em SVG (data URI) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%F0%9F%92%BC%3C/text%3E%3C/svg%3E">
+
+  <title>PortfolioHUB — Rodrigo Angelim da Cunha</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,12 +25,16 @@
   <header class="topo">
     <nav class="nav">
       <a class="marca" href="#inicio">Rodrigo Angelim da Cunha</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
       <ul class="menu" id="menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#documentos">Documentos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#seguranca">Segurança</a></li>
+        <li><a href="#documentacao">Docs</a></li>
+        <li><a href="#apresentacao">Apresentação</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -31,7 +48,7 @@
       <p class="subtitulo">Estudante de Ciência da Computação | Projetos versionados com Git e GitHub</p>
       <div class="hero-botoes">
         <a class="btn btn-primario" href="#projetos">Ver projetos</a>
-        <a class="btn btn-secundario" href="docs/curriculo.pdf" target="_blank">Baixar currículo</a>
+        <a class="btn btn-secundario" href="docs/curriculo.pdf" target="_blank" rel="noopener noreferrer">Baixar currículo</a>
       </div>
     </section>
 
@@ -65,7 +82,7 @@
           <p class="tech">HTML · CSS · GitHub Pages</p>
           <div class="card-links">
             <a href="#inicio">Ver online</a>
-            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/site-vitrine" target="_blank">Código</a>
+            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/site-vitrine" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
@@ -74,8 +91,8 @@
           <p>Aplicação web que calcula o Índice de Massa Corporal com validação de dados.</p>
           <p class="tech">HTML · CSS · JavaScript</p>
           <div class="card-links">
-            <a href="projetos/calculadora-imc/index.html" target="_blank">Ver online</a>
-            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/calculadora-imc" target="_blank">Código</a>
+            <a href="projetos/calculadora-imc/index.html" target="_blank" rel="noopener noreferrer">Ver online</a>
+            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/calculadora-imc" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
@@ -84,8 +101,8 @@
           <p>Gerenciador de tarefas com adição, conclusão e exclusão de itens.</p>
           <p class="tech">HTML · CSS · JavaScript</p>
           <div class="card-links">
-            <a href="projetos/lista-de-tarefas/index.html" target="_blank">Ver online</a>
-            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/lista-de-tarefas" target="_blank">Código</a>
+            <a href="projetos/lista-de-tarefas/index.html" target="_blank" rel="noopener noreferrer">Ver online</a>
+            <a href="https://github.com/rodrigoangel1im/meu-portifolio/tree/main/projetos/lista-de-tarefas" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
         </article>
 
@@ -100,25 +117,25 @@
         <article class="card card-doc">
           <h3>📝 README do portfólio</h3>
           <p>Documentação principal: estrutura de pastas, projetos e como executar.</p>
-          <a href="https://github.com/rodrigoangel1im/meu-portifolio/blob/main/README.md" target="_blank">Ler documentação</a>
+          <a href="https://github.com/rodrigoangel1im/meu-portifolio/blob/main/README.md" target="_blank" rel="noopener noreferrer">Ler documentação</a>
         </article>
 
         <article class="card card-doc">
           <h3>💻 Código no GitHub</h3>
           <p>Repositório com histórico de commits e a tag v1.0.</p>
-          <a href="https://github.com/rodrigoangel1im/meu-portifolio" target="_blank">Ver repositório</a>
+          <a href="https://github.com/rodrigoangel1im/meu-portifolio" target="_blank" rel="noopener noreferrer">Ver repositório</a>
         </article>
 
         <article class="card card-doc">
           <h3>📊 Slides — Apresentação</h3>
           <p>Estrutura, versionamento e projetos do portfólio.</p>
-          <a href="docs/slides-apresentacao.pdf" target="_blank">Abrir slides</a>
+          <a href="docs/slides-apresentacao.pdf" target="_blank" rel="noopener noreferrer">Abrir slides</a>
         </article>
 
         <article class="card card-doc">
           <h3>📝 Currículo</h3>
           <p>Atualizado em outubro de 2026.</p>
-          <a href="docs/curriculo.pdf" target="_blank">Baixar PDF</a>
+          <a href="docs/curriculo.pdf" target="_blank" rel="noopener noreferrer">Baixar PDF</a>
         </article>
 
       </div>
@@ -127,25 +144,147 @@
     <section class="secao secao-clara" id="contato">
       <h2>Contato</h2>
       <div class="contato-links">
-        <a href="https://github.com/rodrigoangel1im" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/rodrigo-angelim-45a137246" target="_blank">LinkedIn</a>
+        <a href="https://github.com/rodrigoangel1im" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/rodrigo-angelim-45a137246" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:angelimrodrigo@outlook.com">E-mail</a>
       </div>
+    </section>
+
+    <section class="secao" id="equipe">
+      <h2>Equipe e colaboradores</h2>
+      <p class="secao-desc">Quem mantém o PortfolioHUB e como os acessos são organizados no GitHub.</p>
+      <div class="grade">
+
+        <article class="card card-pessoa">
+          <h3>Rodrigo Angelim da Cunha</h3>
+          <p class="tech">Owner / Admin</p>
+          <p>
+            Estudante de Ciência da Computação (CEUB). Mantenedor do repositório,
+            responsável pela revisão, pela segurança e pela publicação no GitHub Pages.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/rodrigoangel1im" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/rodrigo-angelim-45a137246" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </article>
+
+        <article class="card card-pessoa">
+          <h3>Colaborador convidado</h3>
+          <!-- TODO: substituir pelo nome do colaborador convidado -->
+          <p class="tech">Papel: TODO (Read, Triage, Write, Maintain ou Admin)</p>
+          <p>
+            Espaço reservado para um colaborador convidado do repositório.
+            <!-- TODO: descrever a contribuição e o período de colaboração -->
+          </p>
+          <div class="card-links">
+            <span class="link-todo">TODO: informar o perfil no GitHub</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="secao secao-clara" id="seguranca">
+      <h2>Segurança e boas práticas</h2>
+      <p class="secao-desc">Controles adotados para proteger o repositório, o histórico e os visitantes.</p>
+      <ul class="lista-seguranca">
+        <li><strong>2FA obrigatório</strong> na conta do mantenedor e para quem tem permissão de escrita.</li>
+        <li><strong>Branch main protegida</strong> com Pull Request obrigatório, revisão e bloqueio de force-push.</li>
+        <li><strong>Secret scanning e push protection</strong> para impedir o vazamento de tokens e senhas.</li>
+        <li><strong>Dependabot</strong> semanal para manter as GitHub Actions atualizadas.</li>
+        <li><strong>LGPD e privacidade</strong>: apenas dados profissionais já públicos, sem telefone ou endereço.</li>
+      </ul>
+      <p class="secao-desc">
+        O status de cada controle (configurado no repositório ou pendente em Settings) está na
+        <a href="docs/politica-de-seguranca.md">política de segurança completa</a> ·
+        <a href="SECURITY.md">Como reportar uma vulnerabilidade</a>
+      </p>
+    </section>
+
+    <section class="secao" id="documentacao">
+      <h2>Documentação e colaboração</h2>
+      <p class="secao-desc">Guias, políticas e canais para acompanhar e contribuir com o projeto.</p>
+      <div class="grade">
+
+        <article class="card card-doc">
+          <h3>Plano de implantação</h3>
+          <p>Etapas, cronograma, riscos e métricas de sucesso da Entrega Final.</p>
+          <a href="docs/plano-de-implantacao.md">Ler o plano</a>
+        </article>
+
+        <article class="card card-doc">
+          <h3>Guia de colaboração</h3>
+          <p>Papéis, convite de colaboradores, fluxo de Pull Request e Issues.</p>
+          <a href="docs/guia-de-colaboracao.md">Abrir o guia</a>
+        </article>
+
+        <article class="card card-doc">
+          <h3>Como contribuir</h3>
+          <p>Padrão de branches, Conventional Commits e checklist de revisão.</p>
+          <a href="CONTRIBUTING.md">Ler o CONTRIBUTING</a>
+        </article>
+
+        <article class="card card-doc">
+          <h3>Repositório no GitHub</h3>
+          <p>Código-fonte, histórico de commits, tags e releases.</p>
+          <a href="https://github.com/rodrigoangel1im/meu-portifolio" target="_blank" rel="noopener noreferrer">Ver repositório</a>
+        </article>
+
+        <article class="card card-doc">
+          <h3>Issues</h3>
+          <p>Registro de bugs, melhorias e tarefas do projeto.</p>
+          <a href="https://github.com/rodrigoangel1im/meu-portifolio/issues" target="_blank" rel="noopener noreferrer">Ver issues</a>
+        </article>
+
+        <article class="card card-doc">
+          <h3>Pull Requests</h3>
+          <p>Propostas de mudança com revisão e verificação automática de links.</p>
+          <a href="https://github.com/rodrigoangel1im/meu-portifolio/pulls" target="_blank" rel="noopener noreferrer">Ver Pull Requests</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="secao secao-clara" id="apresentacao">
+      <h2>Apresentação</h2>
+      <p class="secao-desc">Vídeo de apresentação do PortfolioHUB para a Entrega Final do Bootcamp I.</p>
+      <div class="placeholder-video">
+        <p><strong>Vídeo em preparação</strong></p>
+        <!-- TODO: incorporar o vídeo do YouTube (iframe) quando o link público estiver disponível -->
+        <p class="link-todo">TODO: inserir o link/embed do vídeo no YouTube.</p>
+        <p>
+          Enquanto o vídeo não está disponível, consulte os
+          <a href="docs/slides-apresentacao.pdf" target="_blank" rel="noopener noreferrer">slides da apresentação</a>.
+        </p>
+      </div>
+      <p class="secao-desc">
+        Plano de implantação no Google Docs:
+        <!-- TODO: inserir o link público do Google Docs -->
+        <span class="link-todo">TODO: inserir o link do Google Docs.</span>
+      </p>
     </section>
 
   </main>
 
   <footer class="rodape">
-    <p>© 2026 Rodrigo Angelim da Cunha — Portfólio acadêmico. Feito com Git, GitHub e GitHub Pages.</p>
+    <p>© 2026 Rodrigo Angelim da Cunha — PortfolioHUB · Portfólio acadêmico. Feito com Git, GitHub e GitHub Pages.</p>
   </footer>
 
   <script>
-    document.getElementById('menuBtn').addEventListener('click', function () {
-      document.getElementById('menu').classList.toggle('aberto');
+    var menuBtn = document.getElementById('menuBtn');
+    var menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', function () {
+      var aberto = menu.classList.toggle('aberto');
+      menuBtn.setAttribute('aria-expanded', String(aberto));
+      menuBtn.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
     });
+
     document.querySelectorAll('.menu a').forEach(function (link) {
       link.addEventListener('click', function () {
-        document.getElementById('menu').classList.remove('aberto');
+        menu.classList.remove('aberto');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.setAttribute('aria-label', 'Abrir menu');
       });
     });
   </script>
