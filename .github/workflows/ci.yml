@@ -1,0 +1,21 @@
+name: CI - PortfolioHUB
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v4
+
+    - name: Validar presença dos arquivos principais
+      run: |
+        echo "Verificando estrutura do PortfolioHUB..."
+        test -f index.html || (echo "ERRO: index.html não encontrado!" && exit 1)
+        echo "Estrutura validada com sucesso!"
