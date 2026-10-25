@@ -1,0 +1,36 @@
+# Dependências (caso o projeto passe a usar Node.js)
+node_modules/
+package-lock.json
+
+# Segredos e configuração local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e temporários
+*.log
+npm-debug.log*
+*.tmp
+*.temp
+*.swp
+*~
+
+# Editores e IDEs
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.code-workspace
+
+# Cobertura de testes e artefatos de build
+coverage/
+dist/
+build/
